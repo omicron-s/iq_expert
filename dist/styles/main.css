@@ -1462,16 +1462,11 @@ small {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
   line-height: 1.67;
 }
 
 .result__list span {
   max-width: 320px;
-  text-align: center;
 }
 
 .result__item-number {
@@ -2202,6 +2197,15 @@ html.fixed .modal-overlay {
   visibility: visible;
 }
 
+@media (min-width: 480px) {
+  .result__list li {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .about__list .slide__button {
     display: none;
@@ -2594,6 +2598,11 @@ html.fixed .modal-overlay {
     margin-top: 40px;
   }
 
+  .about__list .title-sm {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+
   .about__list > li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2610,6 +2619,11 @@ html.fixed .modal-overlay {
   .about__list > li:hover,
   .about__list > li:focus-within {
     border-color: #4d7efc;
+  }
+
+  .about__list span.title {
+    -ms-flex-preferred-size: 50px;
+    flex-basis: 50px;
   }
 
   .about__list .slide__static {
@@ -2658,7 +2672,7 @@ html.fixed .modal-overlay {
   }
 
   .result__list .swiper-slide {
-    opacity: 0.5;
+    opacity: 0.4;
     -webkit-transition: opacity 0.4s;
     transition: opacity 0.4s;
   }
@@ -2754,10 +2768,9 @@ html.fixed .modal-overlay {
   }
 }
 
-@media (max-width: 539px) {
-  .result__list .swiper-slide {
-    width: 100%;
-    max-width: 224px;
+@media (max-width: 479px) {
+  .result__list span {
+    font-size: 12px;
   }
 }
 
