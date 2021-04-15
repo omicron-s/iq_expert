@@ -1142,27 +1142,32 @@ small {
   margin: 0 auto;
 }
 
-.modal-cases__slide {
+.cases__slide {
+  height: auto;
   padding: 40px 55px 24px;
 }
 
-.modal-cases__slide .title-sm {
+.cases__slide > .row-sb {
+  height: 100%;
+}
+
+.cases__slide .title-sm {
   margin-bottom: 28px;
 }
 
-.modal-cases__slide p.mb32 {
+.cases__slide p.mb32 {
   max-width: 650px;
 }
 
-.modal-cases__result {
+.cases__result {
   margin-top: auto;
 }
 
-.modal-cases__result-title {
+.cases__result-title {
   margin-bottom: 20px;
 }
 
-.modal-cases__list {
+.cases__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,7 +1177,7 @@ small {
   max-width: 650px;
 }
 
-.modal-cases__list li {
+.cases__list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1182,12 +1187,12 @@ small {
   flex-direction: column;
 }
 
-.modal-cases__list .title-sm {
+.cases__list .title-sm {
   margin-top: 14px;
   color: #4d7efc;
 }
 
-.modal-cases__img {
+.cases__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2496,7 +2501,7 @@ html.modal-showed .modal-overlay {
     margin-bottom: 0;
   }
 
-  .modal-cases__img {
+  .cases__img {
     margin-left: 45px;
   }
 
@@ -2755,7 +2760,7 @@ html.modal-showed .modal-overlay {
     display: none;
   }
 
-  .modal-cases__slide {
+  .cases__slide {
     padding: 25px;
   }
 
@@ -2967,11 +2972,11 @@ html.modal-showed .modal-overlay {
     padding: 10px 0;
   }
 
-  .modal-cases__slide {
+  .cases__slide {
     padding: 12px;
   }
 
-  .modal-cases__slide > .row-sb {
+  .cases__slide > .row-sb {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
