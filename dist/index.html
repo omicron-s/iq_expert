@@ -42,11 +42,12 @@
     <div class="modal modal-form" data-modal="form" role="dialog" data-no-focus-lock>
       <div class="modal__content">
         <div class="container">
-          <div class="row-col modal-form__visible"><b class="subtitle mb32">Записаться на <span>бесплатное</span> занятие</b>
+          <div class="row-col modal-form__visible"><strong class="title-sm">Записаться на занятие</strong><b class="title-sm mb32">Стоимость курса <span>19000р.</span></b>
             <form class="form">
               <input class="input" type="text" value="" placeholder="Ваше имя" required>
               <input class="input" type="text" value="" placeholder="Номер телефона" required>
-              <input class="input" type="email" value="" placeholder="E-mail" required><small>Нажимая на кнопку «Записаться», вы даете согласие на&nbsp;обработку своих <a href="#">персональных данных</a></small>
+              <input class="input" type="email" value="" placeholder="E-mail" required><small>Нажимая на кнопку «Записаться», вы даете согласие на&nbsp;обработку своих 
+                <button class="modal-in-modal" type="button" data-modal="privacy">персональных данных</button></small>
               <button class="button">Записаться</button>
             </form>
           </div>
@@ -58,16 +59,48 @@
         <button class="modal__button" title="Закрыть (Esc)" aria-label="Закрыть"></button>
       </div>
     </div>
+    <div class="modal modal-form" data-modal="call" role="dialog" data-no-focus-lock>
+      <div class="modal__content">
+        <div class="container">
+          <div class="row-col modal-form__visible"><strong class="title-sm mb32">Заказать обратный звонок</strong>
+            <form class="form">
+              <input class="input" type="text" value="" placeholder="Ваше имя" required>
+              <input class="input" type="text" value="" placeholder="Номер телефона" required>
+              <input class="input" type="email" value="" placeholder="E-mail" required><small>Нажимая на кнопку «Записаться», вы даете согласие на&nbsp;обработку своих 
+                <button class="modal-in-modal" type="button" data-modal="privacy">персональных данных</button></small>
+              <button class="button">Записаться</button>
+            </form>
+          </div>
+          <div class="row-col modal-form__hidden">
+            <div class="modal-form__hidden-img"><img src="img/modals/bg.png" alt=""></div><b class="subtitle">Спасибо за заявку!</b><span>Наши специалисты свяжутся с вами в ближайшее время</span>
+            <button class="button modal__close">Записаться</button>
+          </div>
+        </div>
+        <button class="modal__button" title="Закрыть (Esc)" aria-label="Закрыть"></button>
+      </div>
+    </div>
+    <div class="modal modal-privacy" data-modal="privacy" role="dialog" data-no-focus-lock>
+      <div class="modal__content">
+        <div class="container">
+          <p>Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года Вы подтверждаете свое согласие на обработку компанией IqExpert персональных данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу исключительно в целях продажи программного обеспечения на Ваше имя, как это описано ниже, блокирование, обезличивание, уничтожение. </p>
+          <p>Компания IqExpert гарантирует конфиденциальность получаемой информации. Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных обязательств, принятых компанией IqExpert в качестве обязательных к исполнению. </p>
+          <p>В случае необходимости предоставления Ваших персональных данных правообладателю, дистрибьютору или реселлеру программного обеспечения в целях регистрации программного обеспечения на ваше имя, вы даёте согласие на передачу ваших персональных данных. Компания IqExpert гарантирует, что правообладатель, дистрибьютор или реселлер программного обеспечения осуществляет защиту персональных данных на условиях, аналогичных изложенным в Политике конфиденциальности персональных данных. </p>
+          <p>Настоящее согласие распространяется на следующие Ваши персональные данные: фамилия, имя и отчество, адрес электронной почты, почтовый адрес доставки заказов, контактный телефон, платёжные реквизиты. </p>
+          <p>Срок действия согласия является неограниченным. Вы можете в любой момент отозвать настоящее согласие, направив уведомления на электронный адрес: <a href="mailto:info@iqexpert.ru?subject=Отзыв%20согласия%20на%20обработку%20персональных%20данных">info@iqexpert.ru</a> с темой письма «Отзыв согласия на обработку персональных данных». </p>
+          <p>Обращаем ваше внимание, что отзыв согласия на обработку персональных данных влечёт за собой удаление Вашей учётной записи с Интернет-сайта (http://iqexpert.ru), а также уничтожение записей, содержащих ваши персональные данные, в системах обработки персональных данных компании IqExpert, что может сделать невозможным пользование интернет-сервисами компании IqExpert;</p>
+          <p>Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично. </p>
+          <p>Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.</p>
+        </div>
+        <button class="modal__button" title="Закрыть (Esc)" aria-label="Закрыть"></button>
+      </div>
+    </div>
     <div class="heading">
       <div class="container">
         <div class="row-sb row-fd">
           <div class="row-col">
             <h1 class="title">Главный бизнес-курс 2021</h1><strong class="subtitle">для начинающих предпринимателей</strong>
             <p class="mb32">На нашем курсе мы расскажем все секреты и нюансы открытия онлайн-бизнеса<span>в 2021 году</span></p>
-            <div class="row">
-              <button class="button">Получить бесплатный урок</button>
-              <button class="button gray">Подробнее про курс</button>
-            </div>
+            <div class="row"><a class="button" href="#waitingHref">Подробнее про курс</a></div>
           </div>
           <div class="heading__bg"> <img src="img/heading/bg.png" alt=""></div>
         </div>
@@ -121,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="section-pad waiting">
+      <section class="section-pad waiting" id="waitingHref">
         <div class="container"> 
           <div class="row-col"> 
             <h2 class="title mb32">Что вас ждет на курсе</h2>
@@ -185,8 +218,7 @@
                     </li>
             </ul>
             <div class="row">
-              <button class="button">Записаться на курс</button>
-              <button class="button gray">Получить бесплатный урок</button>
+              <button class="button" data-modal="form">Записаться на курс</button>
             </div>
           </div>
         </div>
@@ -259,7 +291,7 @@
               <li>Красивый домен</li>
             </ul>
             <div class="row">
-              <button class="button">Хочу на курс</button>
+              <button class="button" data-modal="form">Хочу на курс</button>
             </div>
           </div>
         </div>
@@ -552,7 +584,7 @@
               <h2 class="title mb32">А чего ждете вы?</h2>
               <p>Запишитесь на бесплатное занятие, чтобы уже через месяц или раньше получить первую прибыль от собственного бизнеса!</p>
               <div class="cta__left-img"><img src="img/cta/bg.png" alt=""></div>
-              <button class="button">Я иду на курс!</button>
+              <button class="button" data-modal="form">Я иду на курс!</button>
             </div>
             <div class="cta__right"><img src="img/cta/bg.png" alt=""></div>
           </div>
@@ -595,7 +627,7 @@
               </div>
             </div>
             <div class="footer__calls row-col"> <a class="phone-link" href="tel:88000000000" title="Позвонить на номер 8 800 000 00 00"><span>8 800 000 00 00</span></a>
-              <button class="footer__button">Обратный звонок</button>
+              <button class="footer__button" data-modal="call">Обратный звонок</button>
             </div>
           </div>
         </div>
@@ -603,7 +635,7 @@
       <div class="footer__bottom">
         <div class="container">
           <div class="row-sb">
-            <button class="footer__button"><small>Политика конфиденциальности</small></button><a class="footer__bottom-web2" href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru"> 
+            <button class="footer__button" data-modal="privacy"><small>Политика конфиденциальности</small></button><a class="footer__bottom-web2" href="https://web2.ru" target="_blank" title="Переход на сайт web2.ru"> 
               <svg width="16" height="16">
                 <use href="./img/sprites/sprite.svg#web2ru"></use>
               </svg><small>Разработка сайта web2.ru</small></a>
@@ -612,7 +644,7 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./js/vendor.min.js"></script>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/vendor.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
